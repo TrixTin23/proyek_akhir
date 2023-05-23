@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange</title>
+</head>
+<body>
+    <h1>Exchange</h1>
+    <form action="index.php" method="post">
+        <input type="text" name="amount" placeholder="Amount">
+        <select name="from">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="UAH">UAH</option>
+        </select>
+        <select name="to">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="UAH">UAH</option>
+        </select>
+        <input type="submit" value="Convert">
+    </form>
+    <!-- <p>
+        <?php
+            if (isset($result)) {
+                echo $result;
+            }
+        ?>
+    </p> -->
+</body>
+</html>
