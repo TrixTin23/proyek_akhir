@@ -8,6 +8,10 @@ app = Flask(__name__)
 # Load model LSTM
 model = load_model('model.h5')
 
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    return render_template('index.html')
+
 # Definisikan endpoint untuk route '/predict' dengan method POST
 @app.route('/predict', methods=['GET'])
 def predict():
